@@ -1,271 +1,136 @@
-/* =========================
-   GENERAL PAGE STYLING
-   ========================= */
-
-* {
-    box-sizing: border-box;
+/* GLOBAL LAYOUT */
+body {
     margin: 0;
     padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #111111;
-    color: #222222;
+/* Background margin (10% from each edge) */
+.wrapper {
+    margin: 10%;
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 80vh;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
 
-/* Main website container
-   80% width = 10% background on each side */
-.site-container {
-    width: 80%;
-    min-height: 100vh;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-}
-
-
-/* =========================
-   HEADER
-   ========================= */
-
+/* HEADER */
 header {
-    padding: 25px 40px 15px;
-    background-color: white;
-}
-
-.header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 20px;
+    display: flex;
     gap: 20px;
 }
 
-.name {
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #333333;
-}
-
-.school-logo {
-    height: 65px;
-    width: auto;
-    object-fit: contain;
-}
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.main-nav {
-    margin-top: 20px;
-    display: flex;
-    width: 100%;
-    background-color: #999999;
-}
-
-.main-nav a {
-    flex: 1;
-    padding: 12px 10px;
-    text-align: center;
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: #999999;
-    transition: 0.2s ease;
-    border-right: 1px solid #aaaaaa;
+    color: #333;
+    font-weight: bold;
 }
 
-.main-nav a:last-child {
-    border-right: none;
+nav a:hover {
+    color: #990000; /* Iowa State red */
 }
 
-.main-nav a:hover {
-    background-color: #777777;
-}
-
-.main-nav a.active {
-    background-color: #666666;
-}
-
-
-/* =========================
-   HERO SECTION
-   ========================= */
-
+/* HERO IMAGE */
 .hero {
-    margin-top: 25px;
-    height: 330px;
-    background-color: #e5e5e5;
+    margin-top: 30px;
+    height: 250px;
+    background-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 30px;
-}
-
-.hero h1 {
-    font-size: 44px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: #555555;
-}
-
-
-/* =========================
-   CONTENT BOXES
-   ========================= */
-
-.content-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 20px;
-}
-
-.content-box {
-    border: 1px solid #cccccc;
-    background-color: white;
-}
-
-.content-box-image {
-    height: 130px;
-    background-color: #dddddd;
+/* MAIN CONTENT + STICKY SIDEBAR */
+.content-area {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777777;
+    margin-top: 30px;
 }
 
-.content-box h2 {
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #999999;
-    color: white;
-    padding: 10px;
+.main-content {
+    width: 70%;
+    padding-right: 20px;
 }
 
-.content-box p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #666666;
+.sticky {
+    width: 30%;
+    position: sticky;
+    top: 20px;
+    background-color: #f7f7f7;
     padding: 15px;
+    border-left: 2px solid #ccc;
 }
 
-
-/* =========================
-   PAGE CONTENT
-   ========================= */
-
-.page-content {
-    padding: 35px 0;
-}
-
-.page-content h1 {
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.page-content h2 {
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.page-content p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #555555;
-}
-
-
-/* =========================
-   FOOTER
-   ========================= */
-
+/* FOOTER */
 footer {
-    margin-top: 30px;
-    padding: 15px 20px;
-    background-color: #999999;
-    color: white;
-    font-size: 13px;
-}
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+    font-size: 0.9rem;
+    color: #555;
+}<div class="wrapper">
 
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Iowa_State_Cyclones_logo.svg" alt="Iowa State Logo">
+            <div class="title">Jaime Grossoehme</div>
+        </div>
+    </header>
 
-/* =========================
-   LINKS
-   ========================= */
+    <nav id="main-nav"></nav>
 
-a {
-    color: #555555;
-}
+    <div class="hero">Hero Image Area</div>
 
-a:hover {
-    color: #222222;
-}
+    <div class="content-area">
+        <div class="main-content">
+            <p>Your main content goes here…</p>
+        </div>
 
+        <div class="sticky">
+            <h3>Sticky Content</h3>
+            <ul>
+                <li>News items</li>
+                <li>Adverts</li>
+                <li>Offers</li>
+                <li>General site info</li>
+                <li>Social Networking icons</li>
+            </ul>
+        </div>
+    </div>
 
-/* =========================
-   MOBILE RESPONSIVE
-   ========================= */
+    <footer>
+        © <span id="year"></span> Jaime Grossoehme — Contact | Privacy | Webmaster
+    </footer>
 
-@media (max-width: 800px) {
+</div>
 
-    .site-container {
-        width: 94%;
-    }
-
-    header {
-        padding: 20px;
-    }
-
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .name {
-        font-size: 28px;
-    }
-
-    .main-nav {
-        flex-direction: column;
-    }
-
-    .main-nav a {
-        border-right: none;
-        border-bottom: 1px solid #aaaaaa;
-    }
-
-    .hero {
-        height: 250px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .content-section {
-        grid-template-columns: 1fr;
-    }
-
-    .page-content {
-        padding: 25px 20px;
-    }
-}
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
