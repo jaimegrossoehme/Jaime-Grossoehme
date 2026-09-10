@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Grossoehme</title>
+    <title>Jaime Grossoehme | Iowa State University</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,36 +11,140 @@
 
 <div class="wrapper">
 
+    <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Iowa_State_Cyclones_logo.svg" alt="Iowa State Logo">
-            <div class="title">Jaime Grossoehme</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Iowa_State_Cyclones_logo.svg"
+                 alt="Iowa State University Logo">
+            <div>
+                <div class="title">Jaime Grossoehme</div>
+                <div class="subtitle">Iowa State University</div>
+            </div>
         </div>
     </header>
 
+    <!-- NAVIGATION -->
     <nav id="main-nav"></nav>
 
-    <div class="hero">Hero Image Area</div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-small">IOWA STATE UNIVERSITY</p>
+            <h1>Jaime Grossoehme</h1>
+            <p>Marketing Student | Iowa State University</p>
 
+            <div class="hero-buttons">
+                <a href="projects.html" class="button">View My Projects</a>
+                <a href="contact.html" class="button button-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
     <div class="content-area">
-        <div class="main-content">
-            <p>Your main content goes here…</p>
-        </div>
 
-        <div class="sticky">
-            <h3>Sticky Content</h3>
-            <ul>
-                <li>News items</li>
-                <li>Adverts</li>
-                <li>Offers</li>
-                <li>General site info</li>
-                <li>Social Networking icons</li>
-            </ul>
-        </div>
+        <main class="main-content">
+
+            <section class="welcome">
+                <p class="section-label">WELCOME</p>
+                <h2>Welcome to My Website</h2>
+
+                <p>
+                    Hi, I'm Jaime Grossoehme, a student at Iowa State University
+                    studying marketing. This website highlights my background,
+                    projects, interests, and experience as I continue developing
+                    my skills for a career in business and marketing.
+                </p>
+
+                <p>
+                    I'm interested in creating ideas, working with people, and
+                    finding ways to connect businesses with their customers.
+                    Explore the site to learn more about me and the work I've
+                    completed.
+                </p>
+            </section>
+
+            <!-- QUICK INFO -->
+            <section class="cards">
+
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>About Me</h3>
+                    <p>
+                        Learn more about my education, interests, skills,
+                        and career goals.
+                    </p>
+                    <a href="about.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>My Projects</h3>
+                    <p>
+                        Check out projects and coursework that demonstrate
+                        my skills and experience.
+                    </p>
+                    <a href="projects.html">View Projects →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Contact</h3>
+                    <p>
+                        Have a question or want to connect? Get in touch
+                        with me.
+                    </p>
+                    <a href="contact.html">Contact Me →</a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sticky">
+
+            <h3>Quick Contact</h3>
+
+            <div class="contact-item">
+                <span>PHONE</span>
+                <a href="tel:8163440905">816-344-0905</a>
+            </div>
+
+            <div class="contact-item">
+                <span>EMAIL</span>
+                <a href="mailto:jg20043@iastate.edu">
+                    jg20043@iastate.edu
+                </a>
+            </div>
+
+            <div class="sidebar-line"></div>
+
+            <h3>Currently</h3>
+            <p>
+                Iowa State University student building experience in
+                marketing, business, and professional communication.
+            </p>
+
+        </aside>
+
     </div>
 
+    <!-- FOOTER -->
     <footer>
-        © <span id="year"></span> Jaime Grossoehme — Contact | Privacy | Webmaster
+        <div>
+            <strong>Jaime Grossoehme</strong>
+            <p>Iowa State University</p>
+        </div>
+
+        <div class="footer-contact">
+            <a href="tel:8163440905">816-344-0905</a>
+            <a href="mailto:jg20043@iastate.edu">jg20043@iastate.edu</a>
+        </div>
+
+        <div class="copyright">
+            © <span id="year"></span> Jaime Grossoehme
+        </div>
     </footer>
 
 </div>
@@ -48,7 +152,9 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 <script src="nav.js"></script>
 
 </body>
 </html>
+2. nav.js
