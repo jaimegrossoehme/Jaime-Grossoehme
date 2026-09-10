@@ -1,5 +1,3 @@
-// nav.js — reusable navigation builder
-
 const navLinks = [
     { name: "Home", url: "index.html" },
     { name: "About", url: "about.html" },
@@ -9,6 +7,7 @@ const navLinks = [
 
 function buildNavigation() {
     const nav = document.getElementById("main-nav");
+
     if (!nav) return;
 
     nav.setAttribute("aria-label", "Main navigation");
@@ -19,4 +18,3 @@ function buildNavigation() {
 }
 
 document.addEventListener("DOMContentLoaded", buildNavigation);
-3. styles.css
