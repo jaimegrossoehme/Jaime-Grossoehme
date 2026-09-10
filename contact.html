@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Grossoehme | Contact</title>
+    <title>Contact | Jaime Grossoehme</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,67 +11,66 @@
 
 <div class="site-wrapper">
 
-    <!-- HEADER -->
     <header class="site-header">
         <a href="index.html" class="brand">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Iowa_State_Cyclones_logo.svg"
-                 alt="Iowa State University Logo">
+
+            <div class="brand-logo" aria-label="Iowa State University"></div>
+
             <div>
                 <span class="brand-name">Jaime Grossoehme</span>
-                <span class="brand-subtitle">Marketing Student • Iowa State University</span>
+                <span class="brand-subtitle">
+                    Marketing Student • Iowa State University
+                </span>
             </div>
+
         </a>
     </header>
 
-    <!-- NAVIGATION -->
     <nav id="main-nav"></nav>
 
-    <!-- PAGE HERO -->
     <section class="page-hero">
-        <div>
-            <p class="eyebrow">GET IN TOUCH</p>
-            <h1>Contact Me</h1>
-            <p>
-                I'd be happy to connect, answer questions, or discuss
-                future opportunities.
-            </p>
-        </div>
+
+        <div class="eyebrow">GET IN TOUCH</div>
+
+        <h1>Contact Me</h1>
+
+        <p>
+            I'm always open to connecting, discussing opportunities,
+            or talking about marketing and business.
+        </p>
+
     </section>
 
-    <!-- CONTACT CONTENT -->
-    <main class="page-content">
+    <section class="content-area">
 
-        <section class="contact-layout">
+        <div class="contact-grid">
 
-            <!-- CONTACT INFO -->
             <div class="contact-info">
 
-                <p class="eyebrow dark">CONTACT</p>
+                <div class="section-label">CONTACT INFORMATION</div>
 
                 <h2>Let's connect.</h2>
 
                 <p>
                     Whether you're interested in my work, want to discuss
-                    an opportunity, or simply want to get in touch,
-                    feel free to reach out.
+                    an opportunity, or simply want to connect, feel free
+                    to reach out.
                 </p>
 
                 <div class="contact-details">
 
                     <div class="contact-detail">
-                        <span class="detail-label">PHONE</span>
-                        <a href="tel:8163440905">816-344-0905</a>
+                        <strong>Phone</strong>
+                        <span>816-344-0905</span>
                     </div>
 
                     <div class="contact-detail">
-                        <span class="detail-label">EMAIL</span>
-                        <a href="mailto:jg20043@iastate.edu">
-                            jg20043@iastate.edu
-                        </a>
+                        <strong>Email</strong>
+                        <span>jg20043@iastate.edu</span>
                     </div>
 
                     <div class="contact-detail">
-                        <span class="detail-label">UNIVERSITY</span>
+                        <strong>University</strong>
                         <span>Iowa State University</span>
                     </div>
 
@@ -79,68 +78,48 @@
 
             </div>
 
-            <!-- CONTACT CARD -->
             <div class="contact-card">
 
-                <div class="contact-card-top">
-                    <span>JG</span>
-                </div>
+                <h2>Jaime Grossoehme</h2>
 
-                <h3>Jaime Grossoehme</h3>
+                <p>
+                    Marketing Student<br>
+                    Iowa State University
+                </p>
 
-                <p>Marketing Student</p>
-
-                <div class="contact-card-line"></div>
-
-                <a href="mailto:jg20043@iastate.edu" class="contact-button">
+                <a
+                    href="mailto:jg20043@iastate.edu"
+                    class="button"
+                >
                     Email Me
                 </a>
 
-                <a href="tel:8163440905" class="contact-button secondary">
+                <a
+                    href="tel:8163440905"
+                    class="button-outline"
+                >
                     Call Me
                 </a>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- BOTTOM CTA -->
-        <section class="contact-bottom">
+    </section>
 
-            <p class="eyebrow">THANKS FOR VISITING</p>
-
-            <h2>Have a great day.</h2>
-
-            <a href="index.html" class="button">Back to Home</a>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
     <footer>
 
         <div class="footer-brand">
-            <strong>Jaime Grossoehme</strong>
-            <span>Iowa State University</span>
+            Jaime <span>Grossoehme</span>
         </div>
 
-        <div class="footer-contact">
-            <a href="tel:8163440905">816-344-0905</a>
-            <a href="mailto:jg20043@iastate.edu">jg20043@iastate.edu</a>
-        </div>
-
-        <div class="copyright">
-            © <span id="year"></span> Jaime Grossoehme
-        </div>
+        <p>
+            Iowa State University • Marketing
+        </p>
 
     </footer>
 
 </div>
-
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 <script src="nav.js"></script>
 
