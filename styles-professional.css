@@ -1,0 +1,141 @@
+/* =========================================================
+   PROFESSIONAL HERO ENHANCEMENT
+   ========================================================= */
+
+.hero-image {
+    min-height: 540px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(17, 17, 17, 0.22),
+            rgba(17, 17, 17, 0.8)
+        ),
+        url("https://raw.githubusercontent.com/jaimegrossoehme/Jaime-Grossoehme/main/C9E9FB2F-53AC-41FE-B2BA-3CF15D450E22%20%281%29.jpeg") center 32% / cover no-repeat;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-image::before {
+    width: 360px;
+    height: 360px;
+    border: 60px solid rgba(200, 16, 46, 0.12);
+    right: -110px;
+    top: -150px;
+}
+
+.hero-image::after {
+    width: 200px;
+    height: 200px;
+    background: rgba(200, 16, 46, 0.17);
+    right: 120px;
+    bottom: -120px;
+    transform: rotate(40deg);
+}
+
+.hero-image-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 72px 54px 60px;
+    margin: 38px 0 38px 36px;
+    background: rgba(17, 17, 17, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.eyebrow {
+    color: #f4d5d8;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.28rem;
+    margin-bottom: 14px;
+}
+
+.hero-image h1 {
+    font-size: clamp(2.7rem, 4.5vw, 4.6rem);
+    line-height: 0.94;
+    letter-spacing: -0.07em;
+    margin-bottom: 18px;
+    color: #ffffff;
+    text-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+}
+
+.hero-image p {
+    max-width: 560px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.06rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.button,
+.button-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    border-width: 1px;
+}
+
+.button {
+    background: #c8102e;
+    box-shadow: 0 14px 28px rgba(200, 16, 46, 0.25);
+}
+
+.button:hover {
+    background: #a80d27;
+    transform: translateY(-2px);
+    box-shadow: 0 18px 30px rgba(200, 16, 46, 0.32);
+}
+
+.button-outline {
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.38);
+}
+
+.button-outline:hover {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+    .hero-image {
+        min-height: 430px;
+    }
+
+    .hero-image-content {
+        max-width: none;
+        margin: 22px 20px;
+        padding: 30px 24px;
+    }
+
+    .hero-image h1 {
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
+    }
+
+    .hero-image p {
+        font-size: 0.98rem;
+    }
+
+    .button,
+    .button-outline {
+        width: 100%;
+    }
+}
